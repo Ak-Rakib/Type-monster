@@ -7,7 +7,7 @@ const modalBackground = document.getElementById("modal-background");
 
 // variables
 let userText = "";
-let errorCount = "";
+let errorCount ="";
 let startTime;
 let questionText = "";
 
@@ -142,3 +142,8 @@ setInterval(() => {
 
   document.getElementById("show-time").innerHTML = `${Math.floor(startTime ? timeSpent : 0)} seconds`;
 }, 1000);
+
+// START Blog
+document.getElementById('blog-btn').addEventListener('click', function(){
+  window.location.href ='blog.html'
+});
